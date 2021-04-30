@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		423820352BCB48FC423D9576 /* Pods_ANViajero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACD5C9F2FCEDE4B005423 /* Pods_ANViajero.framework */; };
 		44369652263892E7007A5C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44369651263892E7007A5C43 /* AppDelegate.swift */; };
 		44369654263892E8007A5C43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44369653263892E8007A5C43 /* SceneDelegate.swift */; };
 		44369656263892E8007A5C43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44369655263892E8007A5C43 /* ViewController.swift */; };
@@ -14,9 +15,21 @@
 		4436965B263892FE007A5C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4436965A263892FE007A5C43 /* Assets.xcassets */; };
 		4436965E263892FE007A5C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4436965C263892FE007A5C43 /* LaunchScreen.storyboard */; };
 		4436968B26399287007A5C43 /* DetalleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4436968A26399287007A5C43 /* DetalleTableViewController.swift */; };
+		4436969326399A22007A5C43 /* dbController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4436969226399A22007A5C43 /* dbController.swift */; };
+		4436969726399C8C007A5C43 /* DeclaracionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4436969626399C8C007A5C43 /* DeclaracionTableViewController.swift */; };
+		4436969B2639A75C007A5C43 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4436969A2639A75C007A5C43 /* Toast.swift */; };
+		4436969D2639A810007A5C43 /* divisas.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4436969526399ADD007A5C43 /* divisas.sqlite */; };
+		444A4921263C5554004382C6 /* ViajeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444A4920263C5554004382C6 /* ViajeController.swift */; };
+		444A4929263C5BC7004382C6 /* PaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444A4928263C5BC7004382C6 /* PaisViewController.swift */; };
+		444A492C263C799D004382C6 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444A492B263C799D004382C6 /* AlertController.swift */; };
+		444A4934263C8B2B004382C6 /* ViajeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444A4933263C8B2B004382C6 /* ViajeTableViewController.swift */; };
+		444A4937263C9796004382C6 /* IdentificacionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444A4936263C9796004382C6 /* IdentificacionTableViewController.swift */; };
+		444A493A263C97B4004382C6 /* IdentificacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444A4939263C97B4004382C6 /* IdentificacionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		147DA3ADA0CE96C665DB6C24 /* Pods-ANViajero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANViajero.debug.xcconfig"; path = "Target Support Files/Pods-ANViajero/Pods-ANViajero.debug.xcconfig"; sourceTree = "<group>"; };
+		2FCACD5C9F2FCEDE4B005423 /* Pods_ANViajero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANViajero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4436964E263892E7007A5C43 /* ANViajero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANViajero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44369651263892E7007A5C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44369653263892E8007A5C43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +39,17 @@
 		4436965D263892FE007A5C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4436965F263892FE007A5C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4436968A26399287007A5C43 /* DetalleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleTableViewController.swift; sourceTree = "<group>"; };
+		4436969226399A22007A5C43 /* dbController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dbController.swift; sourceTree = "<group>"; };
+		4436969526399ADD007A5C43 /* divisas.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = divisas.sqlite; sourceTree = "<group>"; };
+		4436969626399C8C007A5C43 /* DeclaracionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclaracionTableViewController.swift; sourceTree = "<group>"; };
+		4436969A2639A75C007A5C43 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		444A4920263C5554004382C6 /* ViajeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViajeController.swift; sourceTree = "<group>"; };
+		444A4928263C5BC7004382C6 /* PaisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaisViewController.swift; sourceTree = "<group>"; };
+		444A492B263C799D004382C6 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		444A4933263C8B2B004382C6 /* ViajeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViajeTableViewController.swift; sourceTree = "<group>"; };
+		444A4936263C9796004382C6 /* IdentificacionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentificacionTableViewController.swift; sourceTree = "<group>"; };
+		444A4939263C97B4004382C6 /* IdentificacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentificacionController.swift; sourceTree = "<group>"; };
+		C1C389D1DE637B54D5EB4F42 /* Pods-ANViajero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANViajero.release.xcconfig"; path = "Target Support Files/Pods-ANViajero/Pods-ANViajero.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423820352BCB48FC423D9576 /* Pods_ANViajero.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E4673D44EB06CBCC2DA9917 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FCACD5C9F2FCEDE4B005423 /* Pods_ANViajero.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		44369645263892E6007A5C43 = {
 			isa = PBXGroup;
 			children = (
 				44369650263892E7007A5C43 /* ANViajero */,
 				4436964F263892E7007A5C43 /* Products */,
+				AB74358226537722035F4A55 /* Pods */,
+				0E4673D44EB06CBCC2DA9917 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +95,41 @@
 			children = (
 				44369651263892E7007A5C43 /* AppDelegate.swift */,
 				44369653263892E8007A5C43 /* SceneDelegate.swift */,
+				444A492B263C799D004382C6 /* AlertController.swift */,
+				4436969A2639A75C007A5C43 /* Toast.swift */,
+				4436969526399ADD007A5C43 /* divisas.sqlite */,
+				4436969226399A22007A5C43 /* dbController.swift */,
 				44369655263892E8007A5C43 /* ViewController.swift */,
-				44369657263892E8007A5C43 /* Main.storyboard */,
+				4436969626399C8C007A5C43 /* DeclaracionTableViewController.swift */,
 				4436968A26399287007A5C43 /* DetalleTableViewController.swift */,
+				44369657263892E8007A5C43 /* Main.storyboard */,
+				444A493D263C97DF004382C6 /* Viaje */,
 				4436965A263892FE007A5C43 /* Assets.xcassets */,
 				4436965C263892FE007A5C43 /* LaunchScreen.storyboard */,
 				4436965F263892FE007A5C43 /* Info.plist */,
+				444A4936263C9796004382C6 /* IdentificacionTableViewController.swift */,
+				444A4939263C97B4004382C6 /* IdentificacionController.swift */,
 			);
 			path = ANViajero;
+			sourceTree = "<group>";
+		};
+		444A493D263C97DF004382C6 /* Viaje */ = {
+			isa = PBXGroup;
+			children = (
+				444A4920263C5554004382C6 /* ViajeController.swift */,
+				444A4933263C8B2B004382C6 /* ViajeTableViewController.swift */,
+				444A4928263C5BC7004382C6 /* PaisViewController.swift */,
+			);
+			path = Viaje;
+			sourceTree = "<group>";
+		};
+		AB74358226537722035F4A55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				147DA3ADA0CE96C665DB6C24 /* Pods-ANViajero.debug.xcconfig */,
+				C1C389D1DE637B54D5EB4F42 /* Pods-ANViajero.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44369662263892FE007A5C43 /* Build configuration list for PBXNativeTarget "ANViajero" */;
 			buildPhases = (
+				3EEF6A52E1E9CD451CD7F558 /* [CP] Check Pods Manifest.lock */,
 				4436964A263892E7007A5C43 /* Sources */,
 				4436964B263892E7007A5C43 /* Frameworks */,
 				4436964C263892E7007A5C43 /* Resources */,
+				DD722237434E7FC99755F49F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4436969D2639A810007A5C43 /* divisas.sqlite in Resources */,
 				4436965E263892FE007A5C43 /* LaunchScreen.storyboard in Resources */,
 				4436965B263892FE007A5C43 /* Assets.xcassets in Resources */,
 				44369659263892E8007A5C43 /* Main.storyboard in Resources */,
@@ -134,6 +199,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EEF6A52E1E9CD451CD7F558 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ANViajero-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD722237434E7FC99755F49F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ANViajero/Pods-ANViajero-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ANViajero/Pods-ANViajero-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ANViajero/Pods-ANViajero-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4436964A263892E7007A5C43 /* Sources */ = {
@@ -143,7 +250,16 @@
 				44369656263892E8007A5C43 /* ViewController.swift in Sources */,
 				44369652263892E7007A5C43 /* AppDelegate.swift in Sources */,
 				4436968B26399287007A5C43 /* DetalleTableViewController.swift in Sources */,
+				444A4921263C5554004382C6 /* ViajeController.swift in Sources */,
+				4436969726399C8C007A5C43 /* DeclaracionTableViewController.swift in Sources */,
+				444A493A263C97B4004382C6 /* IdentificacionController.swift in Sources */,
+				444A4934263C8B2B004382C6 /* ViajeTableViewController.swift in Sources */,
+				444A4937263C9796004382C6 /* IdentificacionTableViewController.swift in Sources */,
+				4436969326399A22007A5C43 /* dbController.swift in Sources */,
 				44369654263892E8007A5C43 /* SceneDelegate.swift in Sources */,
+				4436969B2639A75C007A5C43 /* Toast.swift in Sources */,
+				444A492C263C799D004382C6 /* AlertController.swift in Sources */,
+				444A4929263C5BC7004382C6 /* PaisViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +403,7 @@
 		};
 		44369663263892FE007A5C43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 147DA3ADA0CE96C665DB6C24 /* Pods-ANViajero.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -308,6 +425,7 @@
 		};
 		44369664263892FE007A5C43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C389D1DE637B54D5EB4F42 /* Pods-ANViajero.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
