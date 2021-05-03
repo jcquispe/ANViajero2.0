@@ -60,6 +60,10 @@ class dbController: UIViewController {
     let auxiliar = Expression<String>("auxiliar")
     //
     let origen = Expression<String>("origen")
+    //
+    let ocupacion = Expression<String>("ocupacion")
+    let fechanacimiento = Expression<String>("fecha_nacimiento")
+    let destino = Expression<String>("destino")
     
     func checkDB(_ database: String){
         let destPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
@@ -252,6 +256,12 @@ class dbController: UIViewController {
                 case "tipo":
                     let form = formulario.filter(idform == Int64(idi))
                     try db!.run(form.update(tipoform <- val))
+                case "ocupacion":
+                    let form = formulario.filter(idform == Int64(idi))
+                    try db!.run(form.update(ocupacion <- val))
+                case "fechanacimiento":
+                    let form = formulario.filter(idform ==  Int64(idi))
+                    try db!.run(form.update(fechanacimiento <- val))
                 default:
                     print("Default setCampo")
                 }
@@ -267,7 +277,7 @@ class dbController: UIViewController {
             do{
                 switch parametro{
                 case "identificacion":
-                    let form = formulario.select(nombre, apellido, sexo, tipodoc, tipootro, numdoc, nacionalidad).filter(idform == Int64(idi))
+                    let form = formulario.select(nombre, apellido, sexo, tipodoc, tipootro, numdoc, nacionalidad, ocupacion, fechanacimiento).filter(idform == Int64(idi))
                     for res in try db!.prepare(form){
                         lista.append(res[nombre])
                         lista.append(res[apellido])
@@ -276,6 +286,8 @@ class dbController: UIViewController {
                         lista.append(res[tipootro])
                         lista.append(res[numdoc])
                         lista.append(res[nacionalidad])
+                        lista.append(res[ocupacion])
+                        lista.append(res[fechanacimiento])
                     }
                 case "paises":
                     let paisesAsc = paises.select(descripcion).order(descripcion.asc)
@@ -855,7 +867,7 @@ class dbController: UIViewController {
         return resultado
     }
     
-    func dbVersion2() -> Bool{
+    func dbVersion2() -> Bool {
         var resultado:Bool = false
         if connect(){
             do{
@@ -867,6 +879,27 @@ class dbController: UIViewController {
             }catch{
                 resultado = false
                 print("Error 6017: \(error)")
+            }
+        }
+        return resultado
+    }
+    
+    func dbVersion3() -> Bool {
+        var resultado: Bool = false
+        if connect() {
+            do {
+                try db!.run(formulario.delete())
+                
+                try db!.run(formulario.addColumn(Expression<String?>(ocupacion), defaultValue: ""))
+                try db!.run(formulario.addColumn(Expression<String?>(fechanacimiento), defaultValue: ""))
+                try db!.run(formulario.addColumn(Expression<String?>(destino), defaultValue: ""))
+                
+                let form = sistema.filter(app == "VIAJEROS")
+                try db!.run(form.update(version <- "3"))
+                resultado = true
+            } catch {
+                resultado = false
+                print("Error 6018: \(error)")
             }
         }
         return resultado

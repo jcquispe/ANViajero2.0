@@ -36,7 +36,7 @@ class ViajeTableViewController: UITableViewController {
         super.viewDidLoad()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         let query = dbc.getSelect("ingresosalida", indice)
         if query[0].isEmpty {
             entrySwitch.isOn = false

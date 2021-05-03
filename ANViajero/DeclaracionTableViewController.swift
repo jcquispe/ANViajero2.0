@@ -14,7 +14,7 @@ class DeclaracionTableViewController: UITableViewController {
     let gen: AlertController = AlertController()
     let lang = Bundle.main.preferredLocalizations.first
     var version:Int = 0
-    var versionActual:Int = 2
+    var versionActual:Int = 3
     var indice: Int64 = 0
     
     @IBAction func addButton(_ sender: Any) {
@@ -41,12 +41,21 @@ class DeclaracionTableViewController: UITableViewController {
                 case 0:
                     self.view.makeToast("Ha ocurrido un error con la Base de Datos", duration: 3.5, position: ToastPosition.center)
                 case 1:
-                    let re:Bool = dbc.dbVersion2()
+                    let re: Bool = dbc.dbVersion2()
                     if re == true{
                         version = version + 1
                         print("Base de datos actualizada!")
                     }
                     else{
+                        self.view.makeToast("Ha ocurrido un error al actualizar la Base de Datos", duration: 3.5, position: ToastPosition.center)
+                    }
+                case 2:
+                    let re: Bool = dbc.dbVersion3()
+                    if re == true {
+                        version = version + 1
+                        print("Base de datos actualizada!")
+                    }
+                    else {
                         self.view.makeToast("Ha ocurrido un error al actualizar la Base de Datos", duration: 3.5, position: ToastPosition.center)
                     }
                 default:

@@ -45,6 +45,10 @@ class DetalleTableViewController: UITableViewController {
             performSegue(withIdentifier: "travelSegue", sender: self)
         case 1:
             performSegue(withIdentifier: "identificationSegue", sender: self)
+        case 2:
+            performSegue(withIdentifier: "baggageSegue", sender: self)
+        case 3:
+            performSegue(withIdentifier: "currencySegue", sender: self)
         default:
             print("nsldf")
         }
@@ -59,11 +63,13 @@ class DetalleTableViewController: UITableViewController {
         case "identificationSegue":
             let destination = segue.destination as? IdentificacionController
             destination!.indice = indice
-        /*case "baggageSegue":
-            
+        case "baggageSegue":
+            let destination = segue.destination as? EquipajeController
+            destination!.indice = indice
         case "currencySegue":
-            
-        case "qucodeSegue":
+            let destination = segue.destination as? DivisaController
+            destination!.indice = indice
+        /*case "qucodeSegue":
             */
         default:
             print("Error")
