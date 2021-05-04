@@ -32,6 +32,8 @@
 		44EE433A264044E200957E18 /* DocumentoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE4339264044E200957E18 /* DocumentoTableViewController.swift */; };
 		44EE433D264044F000957E18 /* NacionalidadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE433C264044F000957E18 /* NacionalidadTableViewController.swift */; };
 		44EE4340264060E300957E18 /* validacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE433F264060E300957E18 /* validacionController.swift */; };
+		9D6E04E02640D66F009DBE91 /* EquipajeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E04DF2640D66F009DBE91 /* EquipajeTableViewController.swift */; };
+		9D6E04E32640D697009DBE91 /* DivisaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6E04E22640D697009DBE91 /* DivisaTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		44EE4339264044E200957E18 /* DocumentoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentoTableViewController.swift; sourceTree = "<group>"; };
 		44EE433C264044F000957E18 /* NacionalidadTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NacionalidadTableViewController.swift; sourceTree = "<group>"; };
 		44EE433F264060E300957E18 /* validacionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validacionController.swift; sourceTree = "<group>"; };
+		9D6E04DF2640D66F009DBE91 /* EquipajeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipajeTableViewController.swift; sourceTree = "<group>"; };
+		9D6E04E22640D697009DBE91 /* DivisaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisaTableViewController.swift; sourceTree = "<group>"; };
 		C1C389D1DE637B54D5EB4F42 /* Pods-ANViajero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANViajero.release.xcconfig"; path = "Target Support Files/Pods-ANViajero/Pods-ANViajero.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +142,8 @@
 				44328EA3264096D700DBEDE4 /* Identificacion */,
 				44328EA426409C7900DBEDE4 /* EquipajeController.swift */,
 				44328EA626409C8D00DBEDE4 /* DivisaController.swift */,
+				9D6E04DF2640D66F009DBE91 /* EquipajeTableViewController.swift */,
+				9D6E04E22640D697009DBE91 /* DivisaTableViewController.swift */,
 			);
 			path = ANViajero;
 			sourceTree = "<group>";
@@ -287,7 +293,9 @@
 				4436969726399C8C007A5C43 /* DeclaracionTableViewController.swift in Sources */,
 				444A493A263C97B4004382C6 /* IdentificacionController.swift in Sources */,
 				444A4934263C8B2B004382C6 /* ViajeTableViewController.swift in Sources */,
+				9D6E04E32640D697009DBE91 /* DivisaTableViewController.swift in Sources */,
 				44EE4340264060E300957E18 /* validacionController.swift in Sources */,
+				9D6E04E02640D66F009DBE91 /* EquipajeTableViewController.swift in Sources */,
 				444A4937263C9796004382C6 /* IdentificacionTableViewController.swift in Sources */,
 				4436969326399A22007A5C43 /* dbController.swift in Sources */,
 				44369654263892E8007A5C43 /* SceneDelegate.swift in Sources */,
