@@ -10,9 +10,16 @@ import UIKit
 class EquipajeController: UIViewController {
 
     var indice: Int64 = 0
+    let lang = Bundle.main.preferredLocalizations.first
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if lang == "es-419"{
+            navigationItem.title = "EQUIPAJE"
+        }
+        else {
+            navigationItem.title = "BAGGAGE"
+        }
     }
     
 

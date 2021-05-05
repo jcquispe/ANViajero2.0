@@ -63,6 +63,7 @@ class DivisaTableViewController: UITableViewController {
         origenDivisasText.addTarget(self, action: #selector(origenText(_:)), for: .editingChanged)
         detinoDivisasText.addTarget(self, action: #selector(destinoText(_:)), for: .editingChanged)
         tableView.tableFooterView = UIView()
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -180,14 +181,14 @@ extension DivisaTableViewController: UITextFieldDelegate {
     @objc func usdText(_ textField: UITextField) {
         if valid.esNumerico(testStr: textField.text!.uppercased()) {
             if textField.text != ""{
-                if Int(textField.text!)! > 49999 {
+                if Int(textField.text!)! > 99999 {
                     usdText.text = ""
                     if lang == "es-419" {
-                        let alerta = gen.alert("Verifique", "Monto máximo: 49999", "Aceptar")
+                        let alerta = gen.alert("Verifique", "Monto máximo: 99999", "Aceptar")
                         self.present(alerta, animated: true, completion: nil)
                     }
                     else{
-                        let alerta = gen.alert("Verify", "Maximum amount: 49999", "OK")
+                        let alerta = gen.alert("Verify", "Maximum amount: 99999", "OK")
                         self.present(alerta, animated: true, completion: nil)
                     }
                     dbc.setCampo("montousd", indice, textField.text!)

@@ -1,0 +1,195 @@
+
+/* Class = "UILabel"; text = "Country of provenance"; ObjectID = "0Fs-vk-uAH"; */
+"0Fs-vk-uAH.text" = "País de procedencia";
+
+/* Class = "UITableViewSection"; headerTitle = "I GENERAL INFORMATION"; ObjectID = "3P0-QZ-aXw"; */
+"3P0-QZ-aXw.headerTitle" = "I. INFORMACIÓN GENERAL";
+
+/* Class = "UILabel"; text = "When departing Bolivian territory, the filling of the Form 250 - SWORN STATEMENT OF ACCOMPANIED BAGGAGE AND CURRENCY TRANSPORTATION is individual. "; ObjectID = "4n5-YM-I9l"; */
+"4n5-YM-I9l.text" = "A la salida de territorio nacional el llenado del Formulario 250 - DECLARACIÓN JURADA DE EQUIPAJE ACOMPAÑADO E INGRESO Y SALIDA DE DIVISAS es individual.";
+
+/* Class = "UILabel"; text = "AN Viajero"; ObjectID = "66O-2E-CnI"; */
+"66O-2E-CnI.text" = "AN Viajero";
+
+/* Class = "UITextField"; placeholder = "Amount 2"; ObjectID = "7KZ-bH-rr9"; */
+"7KZ-bH-rr9.placeholder" = "Monto 2";
+
+/* Class = "UITextField"; placeholder = "Example: John"; ObjectID = "9IV-zC-Gc3"; */
+"9IV-zC-Gc3.placeholder" = "Ejemplo: Juan";
+
+/* Class = "UILabel"; text = "Select"; ObjectID = "ALd-rz-B5X"; */
+"ALd-rz-B5X.text" = "Seleccione";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Ax3-nN-PV0"; */
+"Ax3-nN-PV0.title" = "Item";
+
+/* Class = "UILabel"; text = "Do you carry cash between USD 10,000 to USD 20,000 or its equivalent in other currencies?"; ObjectID = "BAq-pX-Lhk"; */
+"BAq-pX-Lhk.text" = "¿Lleva usted dinero en efectivo entre USD 10.000 a USD 20.000 o su equivalente en otras monedas?";
+
+/* Class = "UITableViewSection"; headerTitle = "OTHER CURRENCIES"; ObjectID = "Beh-VF-uRj"; */
+"Beh-VF-uRj.headerTitle" = "OTRAS MONEDAS";
+
+/* Class = "UITableViewSection"; headerTitle = "III. CURRENCY TRANSPORTATION"; ObjectID = "Bfa-xx-EHR"; */
+"Bfa-xx-EHR.headerTitle" = "III. INGRESO Y SALIDA DE DIVISAS";
+
+/* Class = "UITextField"; placeholder = "Fill in the currency destination"; ObjectID = "DX0-eA-IcA"; */
+"DX0-eA-IcA.placeholder" = "Señale el destino de las divisas";
+
+/* Class = "UILabel"; text = "2. NEW ARTICLES: Articles of strict personal use or non-commercial personal consumption up to a value of USD 1,000 (one thousand USD dollars), with the following limitations:\n* Up to 3 liters of alcoholic beverages.\n* Up to 400 cigarettes.\n* Up to 50 cigarettes or 500 grams of chopped tobacco up."; ObjectID = "E6A-ZY-cPF"; */
+"E6A-ZY-cPF.text" = "2. ARTÍCULOS NUEVOS: Artículos de estricto uso o consumo personal sin fines comerciales hasta por un valor de USD 1,000 (Un mil dólares americanos), con las siguientes limitaciones:\n* Hasta 3 litros de bebidas alcohólicas.\n* Hasta 400 cigarrillos.\n* Hasta 50 cigarros o quinientos gramos de tabaco picado.";
+
+/* Class = "UILabel"; text = "1. USED ARTICLES: clothing and personal belongings, books, magazines, printed matter of all characters, a photographic machine, a portable computer, a video camera and accessories, a recorder, a radio recorder or a radio receiver, a cell phone, sporting goods, a musical instrument, children's car, wheelchairs for invalids and other goods for personal orthopedic use."; ObjectID = "Ew2-E1-MUP"; */
+"Ew2-E1-MUP.text" = "1. ARTÍCULOS USADOS: prendas de vestir y efectos personales, libros, revistas, impresos de todo carácter, una máquina fotográfica, una computadora portátil, una filmadora y accesorios, una grabadora, radio grabadora o radioreceptor, un teléfono celular, artículos deportivos, un instrumento musical, coches para niños, sillas de rueda para inválidos y demás bienes de uso ortopédico personal.";
+
+/* Class = "UILabel"; text = "Is the set of traveler’s articles that are taken to the countries of their route or destination, in quantities and values that do not presume commercial purposes (Article 188 RLGA).\nThe traveler is authorized to introduce the following items without payment of customs duties as accompanied baggage:"; ObjectID = "EwO-HN-5Z0"; */
+"EwO-HN-5Z0.text" = "Es el conjunto de artículos de uso o consumo del viajero conducidos al o a los países de su trayecto o destino, en cantidades y valores que no demuestren fines comerciales (Artículo 188 RLGA).\nSe permite al viajero, introducir sin el pago de tributos aduaneros como equipaje acompañado los siguientes artículos:";
+
+/* Class = "UITextField"; placeholder = "Example: Smith"; ObjectID = "Fnr-1z-esK"; */
+"Fnr-1z-esK.placeholder" = "Ejemplo: Perez";
+
+/* Class = "UILabel"; text = "Baggage quantity"; ObjectID = "Ibg-mY-Zfu"; */
+"Ibg-mY-Zfu.text" = "Cantidad de equipaje:";
+
+/* Class = "UILabel"; text = "Date of birth:"; ObjectID = "Ikr-a4-d1f"; */
+"Ikr-a4-d1f.text" = "Fecha de nacimiento:";
+
+/* Class = "UITabBarItem"; title = "About"; ObjectID = "J8I-FW-T9w"; */
+"J8I-FW-T9w.title" = "Acerca de";
+
+/* Class = "UITabBarItem"; title = "Information"; ObjectID = "JdH-AZ-yea"; */
+"JdH-AZ-yea.title" = "Información";
+
+/* Class = "UITextField"; placeholder = "Example 4805884"; ObjectID = "JnX-Tl-0eg"; */
+"JnX-Tl-0eg.placeholder" = "Ejemplo 4805884";
+
+/* Class = "UILabel"; text = "After having read the instructions detailed in the information section, I declare to bring baggage and/or articles subject to custom taxes payment"; ObjectID = "KDG-7C-D2B"; */
+"KDG-7C-D2B.text" = "Luego de haber leído las instrucciones detalladas en la sección de información, declaro traer equipaje y/o artículos sujetos al pago de tributos aduaneros";
+
+/* Class = "UITableViewSection"; headerTitle = "ACCOMPANIED BAGGAGE"; ObjectID = "L0R-zn-WqZ"; */
+"L0R-zn-WqZ.headerTitle" = "EQUIPAJE ACOMPAÑADO";
+
+/* Class = "UILabel"; text = "Occupation:"; ObjectID = "M5C-e2-dFd"; */
+"M5C-e2-dFd.text" = "Ocupación:";
+
+/* Class = "UITableViewSection"; headerTitle = "II. ACCOMPANIED BAGGAGE"; ObjectID = "NXX-Tk-i50"; */
+"NXX-Tk-i50.headerTitle" = "II. EQUIPAJE ACOMPAÑADO";
+
+/* Class = "UILabel"; text = "Entry to Bolivia"; ObjectID = "Oso-OW-pE0"; */
+"Oso-OW-pE0.text" = "Ingreso a Bolivia";
+
+/* Class = "UILabel"; text = "version"; ObjectID = "RUt-nk-wNp"; */
+"RUt-nk-wNp.text" = "versión";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "TGz-Ud-6Ee"; */
+"TGz-Ud-6Ee.text" = "Subtítulo";
+
+/* Class = "UITextField"; placeholder = "Type amount"; ObjectID = "UPN-c5-MSD"; */
+"UPN-c5-MSD.placeholder" = "Ingrese el monto";
+
+/* Class = "UITableViewSection"; headerTitle = "TRAVEL INFORMATION"; ObjectID = "VvZ-19-aP9"; */
+"VvZ-19-aP9.headerTitle" = "INFORMACIÓN DEL VIAJE";
+
+/* Class = "UITextField"; placeholder = "Fill in the currency origin"; ObjectID = "Vwo-Yc-g8Z"; */
+"Vwo-Yc-g8Z.placeholder" = "Señale el origen de las divisas";
+
+/* Class = "UITabBarItem"; title = "Information"; ObjectID = "XKK-cN-hZp"; */
+"XKK-cN-hZp.title" = "Información";
+
+/* Class = "UILabel"; text = "If your answer is affirmative, you must declare the amount you bring:"; ObjectID = "Xrz-xn-j8L"; */
+"Xrz-xn-j8L.text" = "Si su respuesta fué afirmativa, declare la cantidad:";
+
+/* Class = "UITableViewSection"; headerTitle = "ADDITIONAL INFORMATION"; ObjectID = "b1l-n5-n7t"; */
+"b1l-n5-n7t.headerTitle" = "INFORMACIÓN ADICIONAL";
+
+/* Class = "UILabel"; text = "Every traveler or person responsible for a family group departing or entering Bolivian territory must fill out the Form 250 - SWORN STATEMENT OF ACCOMPANIED BAGGAGE AND CURRENCY TRANSPORTATION and presentit to the custom administration for verification."; ObjectID = "c6R-p8-HEA"; */
+"c6R-p8-HEA.text" = "Todo viajero individual o responsable de un grupo familiar que ingresa a territorio boliviano, debe llenar el Formulario 250 - DECLARACIÓN JURADA DE EQUIPAJE ACOMPAÑADO E INGRESO Y SALIDA DE DIVISAS y presentarla a la administración aduanera para su verificación.";
+
+/* Class = "UILabel"; text = "Sex:"; ObjectID = "cw2-V1-9b5"; */
+"cw2-V1-9b5.text" = "Sexo:";
+
+/* Class = "UILabel"; text = "Identification document:"; ObjectID = "cxk-AQ-dzA"; */
+"cxk-AQ-dzA.text" = "Documento de identificación:";
+
+/* Class = "UITextField"; placeholder = "Currency description 2"; ObjectID = "dAI-DV-5YX"; */
+"dAI-DV-5YX.placeholder" = "Descripción de la moneda 2";
+
+/* Class = "UILabel"; text = "Number:"; ObjectID = "dCp-4j-ZTN"; */
+"dCp-4j-ZTN.text" = "Número:";
+
+/* Class = "UILabel"; text = "Surname(s):"; ObjectID = "eAn-31-W4I"; */
+"eAn-31-W4I.text" = "Apellido(s):";
+
+/* Class = "UITableViewSection"; headerTitle = "CASH"; ObjectID = "eiO-Bw-XaO"; */
+"eiO-Bw-XaO.headerTitle" = "EFECTIVO";
+
+/* Class = "UILabel"; text = "Select"; ObjectID = "ewS-xP-YoA"; */
+"ewS-xP-YoA.text" = "Seleccione";
+
+/* Class = "UITextField"; placeholder = "Example 2"; ObjectID = "gAK-ML-kLW"; */
+"gAK-ML-kLW.placeholder" = "Ejemplo: 2";
+
+/* Class = "UILabel"; text = "US Dollars (no cents):"; ObjectID = "h5u-8U-FWb"; */
+"h5u-8U-FWb.text" = "Dólares (sin centavos):";
+
+/* Class = "UILabel"; text = "Note: All the items that are not detailed in numerals 1 and 2, or that exceed their franchise of USD 1,000 (One thousand US Dollars), are subject to the payment of customs taxes."; ObjectID = "hKo-GA-Msn"; */
+"hKo-GA-Msn.text" = "Nota: Todos los artículos que no se encuentren detallados en los numerales 1 y 2, o que excedan su franquicia de USD 1,000 (Un mil dólares americanos), están sujetos al pago de tributos aduaneros.";
+
+/* Class = "UITextField"; placeholder = "Example: Teacher"; ObjectID = "i6H-v2-njS"; */
+"i6H-v2-njS.placeholder" = "Ejemplo: Maestro";
+
+/* Class = "UILabel"; text = "In accordance with the D.S . 4492 of 21/4/2021 that modifies the D.S. 29681 of 20/08/2008 specifies that, each traveler has the obligation to report currency transportation from or to the Plurinational State of Bolivia for amounts between USD 10,000.- (TEN THOUSAND 00/100 USD DOLLARS) and USD 20,000.- (TWENTY THOUSAND 00/100 US DOLLARS) or its equivalent in other currencies to the National Customs through this statement."; ObjectID = "iWA-P0-8sG"; */
+"iWA-P0-8sG.text" = "En cumplimiento al Decreto Supremo Nº 4492 de 21/04/2021 que modifica el Decreto Supremo N° 29681 de 20/08/2008, todo viajero esta obligado a reportar a la Aduana Nacional mediante la presente Declaración Jurada, la internación o salida de divisas hacia o desde territorio nacional, por montos entre $us 10.000.- (DIEZ MIL 00/100 DÓLARES ESTADOUNIDENSES) y $us20.000.- (VEINTE MIL 00/100 DÓLARES ESTADOUNIDENSES) o su equivalente en otras divisas.";
+
+/* Class = "UILabel"; text = "Nationality:"; ObjectID = "ifv-rW-dHe"; */
+"ifv-rW-dHe.text" = "Nacionalidad:";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "imi-ib-mnL"; */
+"imi-ib-mnL.text" = "Subtítulo";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "j4I-oi-yag"; */
+"j4I-oi-yag.text" = "Título";
+
+/* Class = "UILabel"; text = "Select"; ObjectID = "kdD-vk-2nU"; */
+"kdD-vk-2nU.text" = "Seleccione";
+
+/* Class = "UILabel"; text = "All checked Baggage and/or articles subject to the customs taxes payment that are not declared in this Statement, could be nationalized after rectification of numeral II of this Statement and the payment of the customs violation as a result of the customs offense commission established in article 188 of the Regulations to the General Customs Law, as long as the goods have been identified during customs control within the custom regime framework of the passenger in the primary zone.\nThe Accompanied Baggage franchise will be applied, as long as a period of more than ninety (90) days has elapsed since the last entry into the country.\nRegarding currency transportation, if a complete and truthful form has not been filled out, in this case the penalty is thirty percent (30%) applied to the difference between the amount established in a physical search and the amount declaredwithout prejudice to the corresponding legal action within the D.S. 29681 framework."; ObjectID = "lEx-6e-5Ev"; */
+"lEx-6e-5Ev.text" = "El equipaje y/o artículos sujetos al pago de tributos aduaneros que no sean declarados en el Formulario, podrán ser nacionalizados previa rectificación del numeral II del Formulario y el pago de la contravención aduanera como resultado de la comisión del ilícito aduanero establecido en el artículo 188 del Reglamento a la Ley General de Aduanas, siempre que las mercancías hayan sido identificadas durante el control aduanero en el marco del régimen de viajeros en la zona primaria.\nSe aplicará la franquicia para Equipaje Acompañado, siempre y cuando haya transcurrido un periodo mayor a noventa (90) días desde su último ingreso al país.\nRespecto a las divisas, si usted no presenta la declaración jurada, o lo hiciera en forma imprecisa, será pasible a una multa del treinta por ciento (30%) de la diferencia entre el monto que se establezca de la revisión física y el monto declarado, sin perjuicio de la acción legal que corresponda en el marco del Decreto Supremo N° 29681 de 20/08/2008.";
+
+/* Class = "UITableViewSection"; headerTitle = "IMPORTANT"; ObjectID = "lbJ-0m-Eez"; */
+"lbJ-0m-Eez.headerTitle" = "IMPORTANTE";
+
+/* Class = "UITableViewSection"; headerTitle = "IDENTIFICATION"; ObjectID = "mOn-na-G5t"; */
+"mOn-na-G5t.headerTitle" = "IDENTIFICACIÓN";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "nub-36-hQ9"; */
+"nub-36-hQ9.text" = "Título";
+
+/* Class = "UITableViewSection"; headerTitle = "USD (UNITED STATES DOLLAR)"; ObjectID = "qjy-8g-Tgg"; */
+"qjy-8g-Tgg.headerTitle" = "USD (DÓLARES)";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "shw-FX-Xp4"; */
+"shw-FX-Xp4.title" = "Inicio";
+
+/* Class = "UILabel"; text = "Departure from Bolivia"; ObjectID = "wMe-qF-GeT"; */
+"wMe-qF-GeT.text" = "Salida de Bolivia";
+
+/* Class = "UITextField"; placeholder = "Currency description 1"; ObjectID = "xPm-Ww-xOu"; */
+"xPm-Ww-xOu.placeholder" = "Descripción de la moneda 1";
+
+/* Class = "UILabel"; text = "2.0"; ObjectID = "yRW-LM-BcX"; */
+"yRW-LM-BcX.text" = "2.0";
+
+/* Class = "UILabel"; text = "Name(s):"; ObjectID = "yho-GO-XAc"; */
+"yho-GO-XAc.text" = "Nombre(s):";
+
+/* Class = "UITextField"; placeholder = "Amount 1"; ObjectID = "zXS-RB-fpY"; */
+"zXS-RB-fpY.placeholder" = "Monto 1";
+
+/* Class = "UILabel"; text = "Travel company name:"; ObjectID = "i23-Ny-vcs"; */
+"i23-Ny-vcs.text" = "Empresa de transporte:";
+
+/* Class = "UILabel"; text = "Flight/Plate number:"; ObjectID = "oks-Mg-EYm"; */
+"oks-Mg-EYm.text" = "Número de vuelo/placa:";
+
+/* Class = "UILabel"; text = "Reason for trip:"; ObjectID = "qXD-sn-Xfm"; */
+"qXD-sn-Xfm.text" = "Motivo del viaje";

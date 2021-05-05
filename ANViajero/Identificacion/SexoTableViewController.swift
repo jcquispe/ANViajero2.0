@@ -18,7 +18,12 @@ class SexoTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if lang == "es-419"{
+            navigationItem.title = "Sexo"
+        }
+        else{
+            navigationItem.title = "Sex"
+        }
     }
 
     // MARK: - Table view data source

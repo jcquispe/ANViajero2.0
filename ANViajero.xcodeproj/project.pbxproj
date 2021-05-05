@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		423820352BCB48FC423D9576 /* Pods_ANViajero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCACD5C9F2FCEDE4B005423 /* Pods_ANViajero.framework */; };
+		440DCA1C26430AD30085589A /* MotivoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440DCA1B26430AD30085589A /* MotivoTableViewController.swift */; };
+		440DCA202643330B0085589A /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440DCA1F2643330B0085589A /* QRCodeViewController.swift */; };
 		44328EA2264089CF00DBEDE4 /* ExtranjeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44328EA1264089CF00DBEDE4 /* ExtranjeroViewController.swift */; };
 		44328EA526409C7900DBEDE4 /* EquipajeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44328EA426409C7900DBEDE4 /* EquipajeController.swift */; };
 		44328EA726409C8D00DBEDE4 /* DivisaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44328EA626409C8D00DBEDE4 /* DivisaController.swift */; };
@@ -38,6 +40,10 @@
 /* Begin PBXFileReference section */
 		147DA3ADA0CE96C665DB6C24 /* Pods-ANViajero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANViajero.debug.xcconfig"; path = "Target Support Files/Pods-ANViajero/Pods-ANViajero.debug.xcconfig"; sourceTree = "<group>"; };
 		2FCACD5C9F2FCEDE4B005423 /* Pods_ANViajero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANViajero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		440DCA192642ED110085589A /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
+		440DCA1A2642ED110085589A /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		440DCA1B26430AD30085589A /* MotivoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivoTableViewController.swift; sourceTree = "<group>"; };
+		440DCA1F2643330B0085589A /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		44328EA1264089CF00DBEDE4 /* ExtranjeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtranjeroViewController.swift; sourceTree = "<group>"; };
 		44328EA426409C7900DBEDE4 /* EquipajeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipajeController.swift; sourceTree = "<group>"; };
 		44328EA626409C8D00DBEDE4 /* DivisaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisaController.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 				44328EA3264096D700DBEDE4 /* Identificacion */,
 				44328EA82642C33F00DBEDE4 /* Equipaje */,
 				440DCA182642E2180085589A /* Divisas */,
+				440DCA1F2643330B0085589A /* QRCodeViewController.swift */,
 			);
 			path = ANViajero;
 			sourceTree = "<group>";
@@ -167,6 +174,7 @@
 				444A4920263C5554004382C6 /* ViajeController.swift */,
 				444A4933263C8B2B004382C6 /* ViajeTableViewController.swift */,
 				444A4928263C5BC7004382C6 /* PaisViewController.swift */,
+				440DCA1B26430AD30085589A /* MotivoTableViewController.swift */,
 			);
 			path = Viaje;
 			sourceTree = "<group>";
@@ -223,6 +231,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = 44369645263892E6007A5C43;
 			productRefGroup = 4436964F263892E7007A5C43 /* Products */;
@@ -308,12 +317,14 @@
 				9D6E04E32640D697009DBE91 /* DivisaTableViewController.swift in Sources */,
 				44EE4340264060E300957E18 /* validacionController.swift in Sources */,
 				9D6E04E02640D66F009DBE91 /* EquipajeTableViewController.swift in Sources */,
+				440DCA202643330B0085589A /* QRCodeViewController.swift in Sources */,
 				444A4937263C9796004382C6 /* IdentificacionTableViewController.swift in Sources */,
 				4436969326399A22007A5C43 /* dbController.swift in Sources */,
 				44369654263892E8007A5C43 /* SceneDelegate.swift in Sources */,
 				4436969B2639A75C007A5C43 /* Toast.swift in Sources */,
 				444A492C263C799D004382C6 /* AlertController.swift in Sources */,
 				44328EA726409C8D00DBEDE4 /* DivisaController.swift in Sources */,
+				440DCA1C26430AD30085589A /* MotivoTableViewController.swift in Sources */,
 				44EE433D264044F000957E18 /* NacionalidadTableViewController.swift in Sources */,
 				444A4929263C5BC7004382C6 /* PaisViewController.swift in Sources */,
 			);
@@ -326,6 +337,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				44369658263892E8007A5C43 /* Base */,
+				440DCA192642ED110085589A /* es-419 */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -334,6 +346,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4436965D263892FE007A5C43 /* Base */,
+				440DCA1A2642ED110085589A /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -345,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -406,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -464,6 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = PCA76T454H;
 				INFOPLIST_FILE = ANViajero/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -486,6 +502,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = PCA76T454H;
 				INFOPLIST_FILE = ANViajero/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

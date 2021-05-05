@@ -63,6 +63,7 @@ class IdentificacionTableViewController: UITableViewController {
         numerodocText.addTarget(self, action: #selector(textNumerodoc(_:)), for: .editingChanged)
         ocupacionText.addTarget(self, action: #selector(textOcupacion(_:)), for: .editingChanged)
         tableView.tableFooterView = UIView()
+        self.hideKeyboardWhenTappedAround()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -258,5 +259,17 @@ extension IdentificacionTableViewController: UITextFieldDelegate {
         default:
             return false
         }
+    }
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

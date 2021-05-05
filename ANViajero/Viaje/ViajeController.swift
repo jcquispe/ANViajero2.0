@@ -10,11 +10,16 @@ import UIKit
 class ViajeController: UIViewController {
     
     var indice: Int64 = 0
+    let lang = Bundle.main.preferredLocalizations.first
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if lang == "es-419"{
+            navigationItem.title = "VIAJE"
+        }
+        else {
+            navigationItem.title = "TRAVEL"
+        }
     }
     
     // MARK: - Navigation

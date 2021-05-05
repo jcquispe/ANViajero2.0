@@ -10,7 +10,7 @@ import UIKit
 class DeclaracionTableViewController: UITableViewController {
 
     var listadec: [String] = [String]()
-    var dbc: dbController = dbController();
+    var dbc: dbController = dbController()
     let gen: AlertController = AlertController()
     let lang = Bundle.main.preferredLocalizations.first
     var version:Int = 0
@@ -63,7 +63,15 @@ class DeclaracionTableViewController: UITableViewController {
             }
             version = dbc.getVersionDB()
         }
-        
+        navigationItem.title = "AN Viajero"
+        let logo = UIImage(named: "aduana_logo")
+        let imageView = UIImageView(image: logo)
+        imageView.contentMode = .scaleAspectFit
+        navigationItem.titleView = imageView
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -156,22 +164,6 @@ class DeclaracionTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
     }
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

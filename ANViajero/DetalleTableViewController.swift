@@ -10,8 +10,9 @@ import UIKit
 class DetalleTableViewController: UITableViewController {
 
     var indice: Int64 = 0
-    var dbc: dbController = dbController();
-    let lang = Locale.current.languageCode
+    var dbc: dbController = dbController()
+    let gen: AlertController = AlertController()
+    let lang = Bundle.main.preferredLocalizations.first
     
     var f250 = ["INFORMACIÓN DEL VIAJE", "IDENTIFICACIÓN PERSONAL", "EQUIPAJE ACOMPAÑADO", "REGISTRO DE DIVISAS", "GENERAR CÓDIGO QR"]
     var f250_en = ["TRAVEL INFORMATION", "IDENTIFICATION", "ACCOMPANIED BAGGAGE", "CURRENCY REGISTRATION", "GENERATE QR CODE"]
@@ -35,7 +36,6 @@ class DetalleTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let query = dbc.validaForm250(indice)
-        print(lang)
         if lang == "es-419"{
             cell.textLabel?.text = f250[indexPath.row]
             switch f250[indexPath.row]{
@@ -197,8 +197,22 @@ class DetalleTableViewController: UITableViewController {
             performSegue(withIdentifier: "baggageSegue", sender: self)
         case 3:
             performSegue(withIdentifier: "currencySegue", sender: self)
+        case 4:
+            performSegue(withIdentifier: "qrcodeSegue", sender: self)
         default:
-            print("nsldf")
+            break
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        let query = dbc.validaForm250(indice)
+        if lang == "es-419"{
+            let alert = gen.alert("Verifica", query[indexPath.row], "Aceptar")
+            self.present(alert, animated: true, completion: nil)
+        }
+        else{
+            let alert = gen.alert("Verify", query[indexPath.row], "OK")
+            self.present(alert, animated: true, completion: nil)
         }
     }
 
@@ -217,10 +231,11 @@ class DetalleTableViewController: UITableViewController {
         case "currencySegue":
             let destination = segue.destination as? DivisaController
             destination!.indice = indice
-        /*case "qucodeSegue":
-            */
+        case "qrcodeSegue":
+            let destination = segue.destination as? QRCodeViewController
+            destination!.indice = indice
         default:
-            print("Error")
+            break
         }
     }
 

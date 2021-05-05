@@ -18,6 +18,12 @@ class NacionalidadTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if lang == "es-419"{
+            navigationItem.title = "Nacionalidad"
+        }
+        else{
+            navigationItem.title = "Nationality"
+        }
     }
 
     // MARK: - Table view data source

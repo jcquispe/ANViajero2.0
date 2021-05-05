@@ -28,9 +28,11 @@ class PaisViewController: UIViewController {
         
         if lang == "es-419" {
             paises = dbc.getSelect("paises", 0)
+            navigationItem.title = "Pais procedencia/destino"
         }
         else{
             paises = dbc.getSelect("paises_en", 0)
+            navigationItem.title = "Entry/departure country"
         }
     }
     

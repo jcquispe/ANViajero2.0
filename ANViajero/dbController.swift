@@ -335,6 +335,7 @@ class dbController: UIViewController {
                     let form = formulario.filter(idform == Int64(idi))
                     for res in try db!.prepare(form){
                         lista.append(res[tipoform])
+                        lista.append(res[pais])
                         lista.append(res[nombre])
                         lista.append(res[apellido])
                         lista.append(res[sexo])
@@ -344,20 +345,16 @@ class dbController: UIViewController {
                             lista.append(res[tipodoc])
                         }
                         lista.append(res[numdoc])
+                        lista.append(res[ocupacion])
                         lista.append(res[nacionalidad])
-                        lista.append(res[pais])
-                        lista.append(res[equipajemen])
+                        lista.append(res[fechanacimiento])
                         lista.append("*FRONTERA*")
-                        lista.append("*MEDIO*")
-                        if res[motivoviaje] == "O" {
-                            lista.append(res[motivootros])
-                        } else{
-                            lista.append(res[motivoviaje])
-                        }
                         lista.append(res[transportadora])
                         lista.append(res[numviaje])
-                        lista.append(String(res[numequipaje]))
+                        lista.append(res[motivoviaje])
+                        lista.append(res[motivootros])
                         lista.append(res[articulosno])
+                        lista.append(String(res[numequipaje]))
                         lista.append(res[mayor])
                         lista.append(res[montousd])
                         lista.append(res[importe1])
@@ -365,12 +362,17 @@ class dbController: UIViewController {
                         lista.append(res[importe2])
                         lista.append(res[moneda2])
                         lista.append(res[origen])
+                        lista.append(res[destino])
                     }
                 case "ingresosalida":
-                    let form = formulario.select(tipoform, pais).filter(idform == Int64(idi))
+                    let form = formulario.select(tipoform, pais, transportadora, numviaje, motivoviaje, motivootros).filter(idform == Int64(idi))
                     for res in try db!.prepare(form) {
                         lista.append(res[tipoform])
                         lista.append(res[pais])
+                        lista.append(res[transportadora])
+                        lista.append(res[numviaje])
+                        lista.append(res[motivoviaje])
+                        lista.append(res[motivootros])
                     }
                 default:
                     print("Default getSelect")
@@ -436,9 +438,9 @@ class dbController: UIViewController {
                     }
                     if res[pais] == "" {
                         if lang == "es-419"{
-                            mensaje = mensaje + "- Pais de procedencia/destino"
+                            mensaje = mensaje + "- Pais de procedencia/destino\n"
                         } else{
-                            mensaje = mensaje + "- Country of provenance/destination"
+                            mensaje = mensaje + "- Country of provenance/destination\n"
                         }
                     }
                     if res[transportadora].count < 2 {
