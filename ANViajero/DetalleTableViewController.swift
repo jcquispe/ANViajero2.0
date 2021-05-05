@@ -10,21 +10,23 @@ import UIKit
 class DetalleTableViewController: UITableViewController {
 
     var indice: Int64 = 0
+    var dbc: dbController = dbController();
+    let lang = Locale.current.languageCode
+    
     var f250 = ["INFORMACIÓN DEL VIAJE", "IDENTIFICACIÓN PERSONAL", "EQUIPAJE ACOMPAÑADO", "REGISTRO DE DIVISAS", "GENERAR CÓDIGO QR"]
     var f250_en = ["TRAVEL INFORMATION", "IDENTIFICATION", "ACCOMPANIED BAGGAGE", "CURRENCY REGISTRATION", "GENERATE QR CODE"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        navigationItem.title = dbc.getDescripcion("titulo", indice)
+        tableView.tableFooterView = UIView()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+    }
+    
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return f250.count
     }
@@ -32,10 +34,156 @@ class DetalleTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = f250[indexPath.row]
-        cell.detailTextLabel?.text = "Esto es una prueba"
-        cell.imageView?.image = UIImage(named: "user")
-        cell.accessoryType = .detailButton
+        let query = dbc.validaForm250(indice)
+        print(lang)
+        if lang == "es-419"{
+            cell.textLabel?.text = f250[indexPath.row]
+            switch f250[indexPath.row]{
+            case "INFORMACIÓN DEL VIAJE":
+                if query[indexPath.row] == ""{
+                    cell.detailTextLabel?.text = "¡Información completa!"
+                    cell.detailTextLabel?.textColor = UIColor.blue
+                    cell.imageView!.image = UIImage(named: "travel_blue")
+                    cell.accessoryType = .none
+                }
+                else{
+                    cell.detailTextLabel?.text = "Información incompleta"
+                    cell.detailTextLabel?.textColor = UIColor.red
+                    cell.imageView!.image = UIImage(named: "travel")
+                    cell.accessoryType = .detailButton
+                }
+                
+            case "IDENTIFICACIÓN PERSONAL":
+                if query[indexPath.row] == ""{
+                    cell.detailTextLabel?.text = "¡Información completa!"
+                    cell.detailTextLabel?.textColor = UIColor.blue
+                    cell.imageView!.image = UIImage(named: "user_blue")
+                    cell.accessoryType = .none
+                }
+                else{
+                    cell.detailTextLabel?.text = "Información incompleta"
+                    cell.detailTextLabel?.textColor = UIColor.red
+                    cell.imageView!.image = UIImage(named: "user")
+                    cell.accessoryType = .detailButton
+                }
+            
+            
+            case "EQUIPAJE ACOMPAÑADO":
+                if query[indexPath.row] == ""{
+                    cell.detailTextLabel?.text = "¡Información completa!"
+                    cell.detailTextLabel?.textColor = UIColor.blue
+                    cell.imageView!.image = UIImage(named: "baggabe_blue")
+                    cell.accessoryType = .none
+                }
+                else{
+                    cell.detailTextLabel?.text = "Información incompleta"
+                    cell.detailTextLabel?.textColor = UIColor.red
+                    cell.imageView!.image = UIImage(named: "baggabe")
+                    cell.accessoryType = .detailButton
+                }
+                
+            case "REGISTRO DE DIVISAS":
+                if query[indexPath.row] == ""{
+                    cell.detailTextLabel?.text = "¡Información completa!"
+                    cell.detailTextLabel?.textColor = UIColor.blue
+                    cell.imageView!.image = UIImage(named: "money_blue")
+                    cell.accessoryType = .none
+                }
+                else{
+                    cell.detailTextLabel?.text = "Información incompleta"
+                    cell.detailTextLabel?.textColor = UIColor.red
+                    cell.imageView!.image = UIImage(named: "money")
+                    cell.accessoryType = .detailButton
+                }
+                
+            case "GENERAR CÓDIGO QR":
+                if query[indexPath.row] == ""{
+                    cell.detailTextLabel?.text = "¡Listo para generar!"
+                    cell.detailTextLabel?.textColor = UIColor.blue
+                    cell.imageView!.image = UIImage(named: "qr_blue")
+                }
+                else{
+                    cell.detailTextLabel?.text = "Debe completar toda la información"
+                    cell.detailTextLabel?.textColor = UIColor.red
+                    cell.imageView!.image = UIImage(named: "qr")
+                }
+            default: break
+            }
+        }
+        else{
+            cell.textLabel?.text = f250_en[indexPath.row]
+            
+            switch f250_en[indexPath.row]{
+            case "TRAVEL INFORMATION":
+                if query[indexPath.row] == ""{
+                    cell.detailTextLabel?.text = "Information complete!"
+                    cell.detailTextLabel?.textColor = UIColor.blue
+                    cell.imageView!.image = UIImage(named: "travel_blue")
+                    cell.accessoryType = .none
+                }
+                else{
+                    cell.detailTextLabel?.text = "Information uncomplete"
+                    cell.detailTextLabel?.textColor = UIColor.red
+                    cell.imageView!.image = UIImage(named: "travel")
+                    cell.accessoryType = .detailButton
+                }
+                
+            case "IDENTIFICATION":
+                if query[indexPath.row] == ""{
+                    cell.detailTextLabel?.text = "Information complete!"
+                    cell.detailTextLabel?.textColor = UIColor.blue
+                    cell.imageView!.image = UIImage(named: "user_blue")
+                    cell.accessoryType = .none
+                }
+                else{
+                    cell.detailTextLabel?.text = "Information uncomplete"
+                    cell.detailTextLabel?.textColor = UIColor.red
+                    cell.imageView!.image = UIImage(named: "user")
+                    cell.accessoryType = .detailButton
+                }
+            
+            case "ACCOMPANIED BAGGAGE":
+                if query[indexPath.row] == ""{
+                    cell.detailTextLabel?.text = "Information complete!"
+                    cell.detailTextLabel?.textColor = UIColor.blue
+                    cell.imageView!.image = UIImage(named: "baggabe_blue")
+                    cell.accessoryType = .none
+                }
+                else{
+                    cell.detailTextLabel?.text = "Information uncomplete"
+                    cell.detailTextLabel?.textColor = UIColor.red
+                    cell.imageView!.image = UIImage(named: "baggabe")
+                    cell.accessoryType = .detailButton
+                }
+                
+            case "CURRENCY REGISTRATION":
+                if query[indexPath.row] == ""{
+                    cell.detailTextLabel?.text = "Information complete!"
+                    cell.detailTextLabel?.textColor = UIColor.blue
+                    cell.imageView!.image = UIImage(named: "money_blue")
+                    cell.accessoryType = .none
+                }
+                else{
+                    cell.detailTextLabel?.text = "Information uncomplete"
+                    cell.detailTextLabel?.textColor = UIColor.red
+                    cell.imageView!.image = UIImage(named: "money")
+                    cell.accessoryType = .detailButton
+                }
+                
+            case "GENERATE QR CODE":
+                if query[indexPath.row] == ""{
+                    cell.detailTextLabel?.text = "¡Ready to generate!"
+                    cell.detailTextLabel?.textColor = UIColor.blue
+                    cell.imageView!.image = UIImage(named: "qr_blue")
+                }
+                else{
+                    cell.detailTextLabel?.text = "You must complete all information"
+                    cell.detailTextLabel?.textColor = UIColor.red
+                    cell.imageView!.image = UIImage(named: "qr")
+                }
+            default: break
+            }
+        }
         return cell
     }
     

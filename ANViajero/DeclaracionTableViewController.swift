@@ -88,18 +88,26 @@ class DeclaracionTableViewController: UITableViewController {
         var tipodec: String = ""
         if splitDeclaracion[3] == "I"{
             if lang == "es-419"{
-                tipodec = "Ingreso a Bolivia (250)"
+                tipodec = "Ingreso a Bolivia"
             } else{
-                tipodec = "Entry to Bolivia (250)"
+                tipodec = "Entry to Bolivia"
             }
         }
         else{
-            if lang == "es-419"{
-                tipodec = "Salida de Bolivia (251)"
-            } else{
-                tipodec = "Departure from Bolivia (251)"
+            if splitDeclaracion[3] == "S"{
+                if lang == "es-419"{
+                    tipodec = "Salida de Bolivia"
+                } else{
+                    tipodec = "Departure to Bolivia"
+                }
             }
-            
+            else {
+                if lang == "es-419"{
+                    tipodec = "No especificado"
+                } else{
+                    tipodec = "Not especified"
+                }
+            }
         }
         
         cell.detailTextLabel?.text = splitDeclaracion[2] + "     Form: " + tipodec

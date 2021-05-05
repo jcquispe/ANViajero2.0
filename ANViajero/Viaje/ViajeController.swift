@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViajeController: ViewController {
+class ViajeController: UIViewController {
     
     var indice: Int64 = 0
     

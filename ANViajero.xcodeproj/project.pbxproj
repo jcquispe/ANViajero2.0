@@ -13,7 +13,6 @@
 		44328EA726409C8D00DBEDE4 /* DivisaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44328EA626409C8D00DBEDE4 /* DivisaController.swift */; };
 		44369652263892E7007A5C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44369651263892E7007A5C43 /* AppDelegate.swift */; };
 		44369654263892E8007A5C43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44369653263892E8007A5C43 /* SceneDelegate.swift */; };
-		44369656263892E8007A5C43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44369655263892E8007A5C43 /* ViewController.swift */; };
 		44369659263892E8007A5C43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44369657263892E8007A5C43 /* Main.storyboard */; };
 		4436965B263892FE007A5C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4436965A263892FE007A5C43 /* Assets.xcassets */; };
 		4436965E263892FE007A5C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4436965C263892FE007A5C43 /* LaunchScreen.storyboard */; };
@@ -45,7 +44,6 @@
 		4436964E263892E7007A5C43 /* ANViajero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ANViajero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44369651263892E7007A5C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44369653263892E8007A5C43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44369655263892E8007A5C43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44369658263892E8007A5C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4436965A263892FE007A5C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4436965D263892FE007A5C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,6 +88,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		440DCA182642E2180085589A /* Divisas */ = {
+			isa = PBXGroup;
+			children = (
+				44328EA626409C8D00DBEDE4 /* DivisaController.swift */,
+				9D6E04E22640D697009DBE91 /* DivisaTableViewController.swift */,
+			);
+			path = Divisas;
+			sourceTree = "<group>";
+		};
 		44328EA3264096D700DBEDE4 /* Identificacion */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +108,15 @@
 				44328EA1264089CF00DBEDE4 /* ExtranjeroViewController.swift */,
 			);
 			path = Identificacion;
+			sourceTree = "<group>";
+		};
+		44328EA82642C33F00DBEDE4 /* Equipaje */ = {
+			isa = PBXGroup;
+			children = (
+				44328EA426409C7900DBEDE4 /* EquipajeController.swift */,
+				9D6E04DF2640D66F009DBE91 /* EquipajeTableViewController.swift */,
+			);
+			path = Equipaje;
 			sourceTree = "<group>";
 		};
 		44369645263892E6007A5C43 = {
@@ -131,7 +147,6 @@
 				4436969526399ADD007A5C43 /* divisas.sqlite */,
 				4436969226399A22007A5C43 /* dbController.swift */,
 				44EE433F264060E300957E18 /* validacionController.swift */,
-				44369655263892E8007A5C43 /* ViewController.swift */,
 				4436969626399C8C007A5C43 /* DeclaracionTableViewController.swift */,
 				4436968A26399287007A5C43 /* DetalleTableViewController.swift */,
 				44369657263892E8007A5C43 /* Main.storyboard */,
@@ -140,10 +155,8 @@
 				4436965F263892FE007A5C43 /* Info.plist */,
 				444A493D263C97DF004382C6 /* Viaje */,
 				44328EA3264096D700DBEDE4 /* Identificacion */,
-				44328EA426409C7900DBEDE4 /* EquipajeController.swift */,
-				44328EA626409C8D00DBEDE4 /* DivisaController.swift */,
-				9D6E04DF2640D66F009DBE91 /* EquipajeTableViewController.swift */,
-				9D6E04E22640D697009DBE91 /* DivisaTableViewController.swift */,
+				44328EA82642C33F00DBEDE4 /* Equipaje */,
+				440DCA182642E2180085589A /* Divisas */,
 			);
 			path = ANViajero;
 			sourceTree = "<group>";
@@ -285,7 +298,6 @@
 				44328EA2264089CF00DBEDE4 /* ExtranjeroViewController.swift in Sources */,
 				44EE4337264044BF00957E18 /* SexoTableViewController.swift in Sources */,
 				44EE433A264044E200957E18 /* DocumentoTableViewController.swift in Sources */,
-				44369656263892E8007A5C43 /* ViewController.swift in Sources */,
 				44328EA526409C7900DBEDE4 /* EquipajeController.swift in Sources */,
 				44369652263892E7007A5C43 /* AppDelegate.swift in Sources */,
 				4436968B26399287007A5C43 /* DetalleTableViewController.swift in Sources */,

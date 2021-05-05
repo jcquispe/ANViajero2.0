@@ -62,6 +62,7 @@ class IdentificacionTableViewController: UITableViewController {
         apellidoText.addTarget(self, action: #selector(textApellido(_:)), for: .editingChanged)
         numerodocText.addTarget(self, action: #selector(textNumerodoc(_:)), for: .editingChanged)
         ocupacionText.addTarget(self, action: #selector(textOcupacion(_:)), for: .editingChanged)
+        tableView.tableFooterView = UIView()
     }
     
     override func viewWillAppear(_ animated: Bool) {

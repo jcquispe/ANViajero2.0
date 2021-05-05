@@ -11,7 +11,7 @@ class ViajeTableViewController: UITableViewController {
 
     var indice: Int64 = 0
     let dbc: dbController = dbController()
-    let lang = Bundle.main.preferredLocalizations.first
+    let lang = Locale.current.languageCode
     var paiSel: String = ""
     
     @IBOutlet weak var entrySwitch: UISwitch!
@@ -34,6 +34,7 @@ class ViajeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -75,16 +76,6 @@ class ViajeTableViewController: UITableViewController {
             performSegue(withIdentifier: "countrySegue", sender: self)
         }
     }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

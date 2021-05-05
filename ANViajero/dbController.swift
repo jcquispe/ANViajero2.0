@@ -162,7 +162,7 @@ class dbController: UIViewController {
         return arrayDeclaraciones
     }
     
-    func getDescripcion(_ parametro: String, _ ide: Int) -> String{
+    func getDescripcion(_ parametro: String, _ ide: Int64) -> String{
         var resultado: String = ""
         if(connect()){
             do{
@@ -262,6 +262,9 @@ class dbController: UIViewController {
                 case "fechanacimiento":
                     let form = formulario.filter(idform ==  Int64(idi))
                     try db!.run(form.update(fechanacimiento <- val))
+                case "destino":
+                    let form = formulario.filter(idform == Int64(idi))
+                    try db!.run(form.update(destino <- val))
                 default:
                     print("Default setCampo")
                 }
@@ -316,7 +319,7 @@ class dbController: UIViewController {
                         lista.append(res[articulosno])
                     }
                 case "divisas":
-                    let form = formulario.select(mayor, montousd, importe1, moneda1, importe2, moneda2, origen).filter(idform == Int64(idi))
+                    let form = formulario.select(mayor, montousd, importe1, moneda1, importe2, moneda2, origen, destino).filter(idform == Int64(idi))
                     for res in try db!.prepare(form){
                         lista.append(res[mayor])
                         lista.append(res[montousd])
@@ -325,6 +328,7 @@ class dbController: UIViewController {
                         lista.append(res[importe2])
                         lista.append(res[moneda2])
                         lista.append(res[origen])
+                        lista.append(res[destino])
                     }
                 case "ddjj":
                     
@@ -413,15 +417,62 @@ class dbController: UIViewController {
         return resultado
     }
     
-    func validaForm250(_ ide: Int) -> Array<String>{
+    func validaForm250(_ ide: Int64) -> Array<String>{
         var lista: [String] = [String]()
         var mensaje: String = ""
         var errores = 0
         
         if connect(){
             do{
-                let form = formulario.select(nombre, apellido, sexo, tipodoc, tipootro, numdoc, nacionalidad, pais, motivoviaje, motivootros, transportadora, numviaje, numequipaje, equipajemen, articulosno, mayor, montousd, importe1, moneda1, importe2, moneda2, origen).filter(idform == Int64(ide))
+                let form = formulario.select(tipoform, pais, nombre, apellido, sexo, tipodoc, tipootro, numdoc, ocupacion, nacionalidad, fechanacimiento, transportadora, numviaje, motivoviaje, motivootros, articulosno, numequipaje, mayor, montousd, importe1, moneda1, importe2, moneda2, origen, destino).filter(idform == Int64(ide))
                 for res in try db!.prepare(form){
+                    mensaje = ""
+                    if res[tipoform] == "" {
+                        if lang == "es-419"{
+                            mensaje = mensaje + "- Ingreso/Salida\n"
+                        } else{
+                            mensaje = mensaje + "- Entry/Departure\n"
+                        }
+                    }
+                    if res[pais] == "" {
+                        if lang == "es-419"{
+                            mensaje = mensaje + "- Pais de procedencia/destino"
+                        } else{
+                            mensaje = mensaje + "- Country of provenance/destination"
+                        }
+                    }
+                    if res[transportadora].count < 2 {
+                        if lang == "es-419"{
+                            mensaje = mensaje + "- Empresa de transporte\n"
+                        } else{
+                            mensaje = mensaje + "- Transportation company\n"
+                        }
+                    }
+                    if res[numviaje].count < 3{
+                        if lang == "es-419"{
+                            mensaje = mensaje + "- Número de vuelo o placa\n"
+                        } else{
+                            mensaje = mensaje + "- Flight or plate number\n"
+                        }
+                    }
+                    if res[motivoviaje]==""{
+                        if lang == "es-419"{
+                            mensaje = mensaje + "- Motivo del viaje\n"
+                        } else{
+                            mensaje = mensaje + "- Reason for trip\n"
+                        }
+                    } else if res[motivoviaje] == "O" && res[motivootros] == ""{
+                        if lang == "es-419"{
+                            mensaje = mensaje + "- Otro motivo del viaje\n"
+                        } else{
+                            mensaje = mensaje + "- Another reason of your trip\n"
+                        }
+                    }
+                    lista.append(mensaje)
+                    if mensaje != "" {
+                        errores = errores + 1
+                    }
+                    
                     mensaje = ""
                     if res[nombre].count < 3 {
                         if lang == "es-419"{
@@ -434,7 +485,7 @@ class dbController: UIViewController {
                         if lang == "es-419"{
                             mensaje = mensaje + "- Apellido(s)\n"
                         } else{
-                            mensaje = mensaje + "- Lastname(s)\n"
+                            mensaje = mensaje + "- Surname(s)\n"
                         }
                     }
                     if res[sexo]==""{
@@ -464,6 +515,13 @@ class dbController: UIViewController {
                             mensaje = mensaje + "- ID Number\n"
                         }
                     }
+                    if res[ocupacion].count < 3 {
+                        if lang == "es-419"{
+                            mensaje = mensaje + "- Ocupación\n"
+                        } else{
+                            mensaje = mensaje + "- Ocupation\n"
+                        }
+                    }
                     if res[nacionalidad]==""{
                         if lang == "es-419"{
                             mensaje = mensaje + "- Nacionalidad\n"
@@ -471,44 +529,11 @@ class dbController: UIViewController {
                             mensaje = mensaje + "- Nationality\n"
                         }
                     }
-                    lista.append(mensaje)
-                    if mensaje != "" {
-                        errores = errores + 1
-                    }
-                    
-                    mensaje = ""
-                    if res[pais]==""{
+                    if res[fechanacimiento].count < 3 {
                         if lang == "es-419"{
-                            mensaje = mensaje + "- Pais de origen/destino\n"
+                            mensaje = mensaje + "- Fecha de nacimiento\n"
                         } else{
-                            mensaje = mensaje + "- Country of origin/destination\n"
-                        }
-                    }
-                    if res[motivoviaje]==""{
-                        if lang == "es-419"{
-                            mensaje = mensaje + "- Motivo del viaje\n"
-                        } else{
-                            mensaje = mensaje + "- Reason for trip\n"
-                        }
-                    } else if res[motivoviaje] == "O" && res[motivootros] == ""{
-                        if lang == "es-419"{
-                            mensaje = mensaje + "- Otro motivo del viaje\n"
-                        } else{
-                            mensaje = mensaje + "- Another reason of your trip\n"
-                        }
-                    }
-                    if res[transportadora].count < 2 {
-                        if lang == "es-419"{
-                            mensaje = mensaje + "- Empresa de transporte\n"
-                        } else{
-                            mensaje = mensaje + "- Transportation company\n"
-                        }
-                    }
-                    if res[numviaje].count < 3{
-                        if lang == "es-419"{
-                            mensaje = mensaje + "- Número de vuelo o placa\n"
-                        } else{
-                            mensaje = mensaje + "- Flight or plate number\n"
+                            mensaje = mensaje + "- Birth date\n"
                         }
                     }
                     lista.append(mensaje)
@@ -517,11 +542,11 @@ class dbController: UIViewController {
                     }
                     
                     mensaje = ""
-                    if res[equipajemen]==""{
+                    if res[articulosno]==""{
                         if lang == "es-419"{
-                            mensaje = mensaje + "- ¿Equipaje de menores de 18 años?\n"
+                            mensaje = mensaje + "- ¿Artículos sujetos al pago de tributos aduaneros?\n"
                         } else{
-                            mensaje = mensaje + "- Baggage of 18 years minors?\n"
+                            mensaje = mensaje + "- Articles subject to custom taxes payment?\n"
                         }
                     }
                     if res[numequipaje]==""{
@@ -529,13 +554,6 @@ class dbController: UIViewController {
                             mensaje = mensaje + "- Cantidad de equipaje\n"
                         } else{
                             mensaje = mensaje + "- Quantity of baggage\n"
-                        }
-                    }
-                    if res[articulosno]==""{
-                        if lang == "es-419"{
-                            mensaje = mensaje + "- ¿Artículos no incluidos como equipaje acompañado?\n"
-                        } else{
-                            mensaje = mensaje + "- Items not included as accompanied baggage?\n"
                         }
                     }
                     lista.append(mensaje)
@@ -546,9 +564,9 @@ class dbController: UIViewController {
                     mensaje = ""
                     if res[mayor]==""{
                         if lang == "es-419"{
-                            mensaje = mensaje + "- ¿Efectivo por un monto superior a 10.000 $us?\n"
+                            mensaje = mensaje + "- ¿Efectivo entre 10.000 a 20.000 USD?\n"
                         } else{
-                            mensaje = mensaje + "- Cash money for an amount upper than $ 10.000?\n"
+                            mensaje = mensaje + "- Cash between USD 10.000 and 20.000?\n"
                         }
                     } else if res[mayor] == "S" {
                         if res[montousd] == ""{
@@ -564,7 +582,14 @@ class dbController: UIViewController {
                             if lang == "es-419"{
                                 mensaje = mensaje + "- Origen de las divisas\n"
                             } else{
-                                mensaje = mensaje + "- Origin of the currencies\n"
+                                mensaje = mensaje + "- Currency origin\n"
+                            }
+                        }
+                        if res[destino].count < 3{
+                            if lang == "es-419"{
+                                mensaje = mensaje + "- Destino de las divisas\n"
+                            } else{
+                                mensaje = mensaje + "- Currency destination\n"
                             }
                         }
                     }
@@ -593,7 +618,7 @@ class dbController: UIViewController {
                             mensaje = "Para generar el código debe llenar correctamente todo el formulario"
                         }
                         else{
-                            mensaje = "In order to generate the code you have to fill correctly all the form"
+                            mensaje = "In order to generate the code you have to fill correctly the entire form"
                         }
                     }
                     lista.append(mensaje)
