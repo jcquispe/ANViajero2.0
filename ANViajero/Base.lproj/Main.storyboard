@@ -53,7 +53,7 @@
                         <sections>
                             <tableViewSection headerTitle="I. GENERAL INFORMATION" id="3P0-QZ-aXw">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="180" id="Dcb-fk-QR7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="180" id="Dcb-fk-QR7">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dcb-fk-QR7" id="b3G-CH-lz3">
@@ -83,7 +83,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="II. ACCOMPANIED BAGGAGE" id="NXX-Tk-i50">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="400" id="IH6-Ym-bRT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="400" id="IH6-Ym-bRT">
                                         <rect key="frame" x="0.0" y="253.50000034679067" width="414" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IH6-Ym-bRT" id="9UI-jE-T61">
@@ -133,7 +133,7 @@ The traveler is authorized to introduce the following items without payment of c
                             </tableViewSection>
                             <tableViewSection headerTitle="III. CURRENCY TRANSPORTATION" id="Bfa-xx-EHR">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="160" id="Yye-a6-zDy">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="160" id="Yye-a6-zDy">
                                         <rect key="frame" x="0.0" y="702.50000069358134" width="414" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yye-a6-zDy" id="SDh-sV-xGm">
@@ -155,8 +155,8 @@ The traveler is authorized to introduce the following items without payment of c
                             </tableViewSection>
                             <tableViewSection headerTitle="IMPORTANT" id="lbJ-0m-Eez">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="300" id="MZ4-F8-Jk0">
-                                        <rect key="frame" x="0.0" y="911.5000010403719" width="414" height="300"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="300" id="MZ4-F8-Jk0">
+                                        <rect key="frame" x="0.0" y="911.50000104037201" width="414" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MZ4-F8-Jk0" id="dDr-PA-JqL">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
@@ -165,9 +165,9 @@ The traveler is authorized to introduce the following items without payment of c
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEx-6e-5Ev">
                                                     <rect key="frame" x="20" y="11" width="374" height="278"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                                    <mutableString key="text">All checked Baggage and/or articles subject to the customs taxes payment that are not declared in this Statement, could be nationalized after rectification of numeral II of this Statement and the payment of the customs violation as a result of the customs offense commission established in article 188 of the Regulations to the General Customs Law, as long as the goods have been identified during customs control within the custom regime framework of the passenger in the primary zone.
+                                                    <string key="text">All checked Baggage and/or articles subject to the customs taxes payment that are not declared in this Statement, could be nationalized after rectification of numeral II of this Statement and the payment of the customs violation as a result of the customs offense commission established in article 188 of the Regulations to the General Customs Law, as long as the goods have been identified during customs control within the custom regime framework of the passenger in the primary zone.
 The Accompanied Baggage franchise will be applied, as long as a period of more than ninety (90) days has elapsed since the last entry into the country.
-Regarding currency transportation, if a complete and truthful form has not been filled out, in this case the penalty is thirty percent (30%) applied to the difference between the amount established in a physical search and the amount declaredwithout prejudice to the corresponding legal action within the D.S. 29681 framework.</mutableString>
+Regarding currency transportation, if a complete and truthful form has not been filled out, in this case the penalty is thirty percent (30%) applied to the difference between the amount established in a physical search and the amount declaredwithout prejudice to the corresponding legal action within the D.S. 29681 framework.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -228,7 +228,7 @@ Regarding currency transportation, if a complete and truthful form has not been 
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="OYc-Iy-jDq">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="Ax3-nN-PV0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ax3-nN-PV0">
                             <connections>
                                 <action selector="addButton:" destination="bmI-06-OAf" id="qZJ-JU-Nub"/>
                             </connections>
@@ -351,7 +351,7 @@ Regarding currency transportation, if a complete and truthful form has not been 
                                                     <rect key="frame" x="20" y="27" width="374" height="53"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -381,7 +381,7 @@ Regarding currency transportation, if a complete and truthful form has not been 
                                                     <rect key="frame" x="164" y="0.0" width="230" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -431,6 +431,7 @@ Regarding currency transportation, if a complete and truthful form has not been 
                         <outlet property="departureSwitch" destination="QqW-rM-5uk" id="T7C-6b-ZfF"/>
                         <outlet property="entrySwitch" destination="WRU-v4-yNC" id="JMx-2i-80l"/>
                         <outlet property="flightText" destination="nkd-ab-PR2" id="gSc-Ds-ao7"/>
+                        <outlet property="provencanceLabel" destination="0Fs-vk-uAH" id="qa6-gY-Cuk"/>
                         <outlet property="reasonLabel" destination="xuO-cw-XU8" id="FY6-Bz-IKP"/>
                         <segue destination="hPb-Qx-GkT" kind="show" identifier="countrySegue" id="pQb-42-bIc"/>
                         <segue destination="Wnp-iu-67b" kind="show" identifier="reasonSegue" id="Q8s-RR-amy"/>
@@ -684,7 +685,7 @@ Regarding currency transportation, if a complete and truthful form has not been 
                                                     <rect key="frame" x="214" y="0.0" width="180" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -792,6 +793,13 @@ Regarding currency transportation, if a complete and truthful form has not been 
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Derechos reservados Aduana Nacional 2018-2021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="425-0R-bzT">
+                                <rect key="frame" x="20" y="792" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -800,7 +808,7 @@ Regarding currency transportation, if a complete and truthful form has not been 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-668" y="962"/>
+            <point key="canvasLocation" x="-668" y="951"/>
         </scene>
         <!--Identificacion Controller-->
         <scene sceneID="B1x-Pp-Hir">
@@ -861,7 +869,7 @@ Regarding currency transportation, if a complete and truthful form has not been 
                                                     <rect key="frame" x="119" y="0.0" width="275" height="51"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -884,7 +892,7 @@ Regarding currency transportation, if a complete and truthful form has not been 
                                                     <rect key="frame" x="120" y="0.0" width="274" height="51"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -955,7 +963,7 @@ Regarding currency transportation, if a complete and truthful form has not been 
                                                     <rect key="frame" x="83" y="0.0" width="311" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -1293,7 +1301,7 @@ Regarding currency transportation, if a complete and truthful form has not been 
                                                     <rect key="frame" x="203" y="8" width="191" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="US Dollars (no cents):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5u-8U-FWb">
                                                     <rect key="frame" x="20" y="15" width="175" height="21"/>
@@ -1320,13 +1328,13 @@ Regarding currency transportation, if a complete and truthful form has not been 
                                                     <rect key="frame" x="156" y="8" width="238" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount 1" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zXS-RB-fpY">
                                                     <rect key="frame" x="20" y="8" width="128" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -1342,13 +1350,13 @@ Regarding currency transportation, if a complete and truthful form has not been 
                                                     <rect key="frame" x="20" y="8" width="128" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Currency description 2" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dAI-DV-5YX">
                                                     <rect key="frame" x="156" y="8" width="238" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -1368,7 +1376,7 @@ Regarding currency transportation, if a complete and truthful form has not been 
                                                     <rect key="frame" x="20" y="8" width="374" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -1384,7 +1392,7 @@ Regarding currency transportation, if a complete and truthful form has not been 
                                                     <rect key="frame" x="20" y="8" width="374" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -1442,18 +1450,17 @@ Regarding currency transportation, if a complete and truthful form has not been 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="859-0E-8rq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2826.0869565217395" y="943.52678571428567"/>
+            <point key="canvasLocation" x="2828" y="951"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pyg-Oc-8a4"/>
+        <segue reference="Waq-rF-bS0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="folder" width="25" height="25"/>
         <image name="home" width="25" height="25"/>
         <image name="info" width="25" height="25"/>
         <image name="logoviajero" width="512" height="512"/>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

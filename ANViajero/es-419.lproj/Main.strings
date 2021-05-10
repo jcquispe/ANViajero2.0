@@ -193,3 +193,9 @@
 
 /* Class = "UILabel"; text = "Reason for trip:"; ObjectID = "qXD-sn-Xfm"; */
 "qXD-sn-Xfm.text" = "Motivo del viaje";
+
+/* Class = "UILabel"; text = "This QR code will be requested in the customs administration of border or airport"; ObjectID = sI1-US-3xo */
+"sI1-US-3xo.text" = "Este código QR será solicitado en administraciones de aduana de frontera o aeropuerto";
+
+
+

@@ -22,11 +22,18 @@ class ViajeTableViewController: UITableViewController {
     @IBOutlet weak var companyText: UITextField!
     @IBOutlet weak var flightText: UITextField!
     @IBOutlet weak var reasonLabel: UILabel!
+    @IBOutlet weak var provencanceLabel: UILabel!
     
     @IBAction func entryAction(_ sender: UISwitch) {
         if entrySwitch.isOn {
             departureSwitch.isOn = false
             dbc.setCampo("tipo", indice, "I")
+            if lang == "es-419" {
+                provencanceLabel.text = "País de procedencia"
+            }
+            else {
+                provencanceLabel.text = "Country of provenance"
+            }
         }
     }
     
@@ -34,6 +41,13 @@ class ViajeTableViewController: UITableViewController {
         if departureSwitch.isOn {
             entrySwitch.isOn = false
             dbc.setCampo("tipo", indice, "S")
+            if lang == "es-419" {
+                provencanceLabel.text = "País de destino final"
+            }
+            else{
+                provencanceLabel.text = "Final destination country"
+            }
+            
         }
     }
     

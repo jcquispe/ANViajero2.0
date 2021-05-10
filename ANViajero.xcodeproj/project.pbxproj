@@ -163,7 +163,7 @@
 				44328EA3264096D700DBEDE4 /* Identificacion */,
 				44328EA82642C33F00DBEDE4 /* Equipaje */,
 				440DCA182642E2180085589A /* Divisas */,
-				440DCA1F2643330B0085589A /* QRCodeViewController.swift */,
+				4469DDBB2645B257000E4CC0 /* QR */,
 			);
 			path = ANViajero;
 			sourceTree = "<group>";
@@ -177,6 +177,14 @@
 				440DCA1B26430AD30085589A /* MotivoTableViewController.swift */,
 			);
 			path = Viaje;
+			sourceTree = "<group>";
+		};
+		4469DDBB2645B257000E4CC0 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				440DCA1F2643330B0085589A /* QRCodeViewController.swift */,
+			);
+			path = QR;
 			sourceTree = "<group>";
 		};
 		AB74358226537722035F4A55 /* Pods */ = {

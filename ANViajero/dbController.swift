@@ -580,6 +580,15 @@ class dbController: UIViewController {
                                 }
                             }
                         }
+                        else {
+                            if Int(res[montousd])! < 10000 && res[moneda1].count == 0 && res[moneda2].count == 0{
+                                if lang == "es-419"{
+                                    mensaje = mensaje + "- Monto USD u otra moneda\n"
+                                } else{
+                                    mensaje = mensaje + "- USD or other currency amount\n"
+                                }
+                            }
+                        }
                         if res[origen].count < 3{
                             if lang == "es-419"{
                                 mensaje = mensaje + "- Origen de las divisas\n"

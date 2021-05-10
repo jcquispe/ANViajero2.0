@@ -198,7 +198,14 @@ class DetalleTableViewController: UITableViewController {
         case 3:
             performSegue(withIdentifier: "currencySegue", sender: self)
         case 4:
-            performSegue(withIdentifier: "qrcodeSegue", sender: self)
+            let query = dbc.validaForm250(indice)
+            if query[indexPath.row] == "" {
+                performSegue(withIdentifier: "qrcodeSegue", sender: self)
+            }
+            else {
+                let alerta = gen.alert("", query[indexPath.row], "OK")
+                self.present(alerta, animated: true, completion: nil)
+            }
         default:
             break
         }

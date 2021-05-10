@@ -64,6 +64,22 @@ class IdentificacionTableViewController: UITableViewController {
         ocupacionText.addTarget(self, action: #selector(textOcupacion(_:)), for: .editingChanged)
         tableView.tableFooterView = UIView()
         self.hideKeyboardWhenTappedAround()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+                
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc private func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height + tableView.rowHeight, right: 0)
+        }
+    }
+
+    @objc private func keyboardWillHide(notification: NSNotification) {
+        tableView.contentInset = .zero
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -255,7 +271,7 @@ extension IdentificacionTableViewController: UITextFieldDelegate {
         case ocupacionText:
             guard let text = textField.text else { return true }
             let newLength = text.count + string.count - range.length
-            return newLength <= 25
+            return newLength <= 20
         default:
             return false
         }

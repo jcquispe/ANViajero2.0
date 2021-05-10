@@ -64,6 +64,23 @@ class DivisaTableViewController: UITableViewController {
         detinoDivisasText.addTarget(self, action: #selector(destinoText(_:)), for: .editingChanged)
         tableView.tableFooterView = UIView()
         self.hideKeyboardWhenTappedAround()
+        
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+                
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc private func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height + tableView.rowHeight, right: 0)
+        }
+    }
+
+    @objc private func keyboardWillHide(notification: NSNotification) {
+        tableView.contentInset = .zero
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -168,11 +185,11 @@ extension DivisaTableViewController: UITextFieldDelegate {
         case origenDivisasText:
             guard let text = textField.text else { return true }
             let newLength = text.count + string.count - range.length
-            return newLength <= 100
+            return newLength <= 60
         case detinoDivisasText:
             guard let text = textField.text else { return true }
             let newLength = text.count + string.count - range.length
-            return newLength <= 100
+            return newLength <= 60
         default:
             return false
         }
